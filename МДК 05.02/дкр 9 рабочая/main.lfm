@@ -1,0 +1,71 @@
+object fMain: TfMain
+  Left = 194
+  Height = 400
+  Top = 265
+  Width = 800
+  BorderStyle = bsDialog
+  Caption = 'Список канцтоваров'
+  ClientHeight = 400
+  ClientWidth = 800
+  Constraints.MaxHeight = 400
+  Constraints.MaxWidth = 800
+  Constraints.MinHeight = 400
+  Constraints.MinWidth = 800
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.0.0.3'
+  object Panel1: TPanel
+    Left = 0
+    Height = 27
+    Top = 0
+    Width = 800
+    Align = alTop
+    ClientHeight = 27
+    ClientWidth = 800
+    TabOrder = 0
+    object bAdd: TSpeedButton
+      Left = 24
+      Height = 28
+      Top = 0
+      Width = 150
+      Caption = 'Добавить товар'
+      OnClick = bAddClick
+    end
+    object bEdit: TSpeedButton
+      Left = 224
+      Height = 28
+      Top = 0
+      Width = 160
+      Caption = 'Редактировать товар'
+      OnClick = bEditClick
+    end
+    object bDel: TSpeedButton
+      Left = 416
+      Height = 28
+      Top = 0
+      Width = 150
+      Caption = 'Удалить товар'
+      OnClick = bDelClick
+    end
+    object bSort: TSpeedButton
+      Left = 608
+      Height = 28
+      Top = 0
+      Width = 150
+      Caption = 'Сортировать список'
+      OnClick = bSortClick
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 373
+    Top = 27
+    Width = 800
+    Align = alClient
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+  end
+end

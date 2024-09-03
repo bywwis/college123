@@ -1,0 +1,111 @@
+object fEdit: TfEdit
+  Left = 808
+  Height = 400
+  Top = 124
+  Width = 400
+  BorderStyle = bsDialog
+  Caption = 'Редактор контакта'
+  ClientHeight = 400
+  ClientWidth = 400
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.0.0.3'
+  object Label1: TLabel
+    Left = 16
+    Height = 20
+    Top = 8
+    Width = 181
+    Caption = 'Введите название товара:'
+  end
+  object eName: TEdit
+    Left = 8
+    Height = 28
+    Top = 32
+    Width = 380
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 20
+    Top = 72
+    Width = 148
+    Caption = 'Введите цену товара:'
+  end
+  object ePrice: TEdit
+    Left = 8
+    Height = 28
+    Top = 96
+    Width = 380
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 20
+    Top = 136
+    Width = 222
+    Caption = 'Введите производителя товара:'
+  end
+  object eMaker: TEdit
+    Left = 8
+    Height = 28
+    Top = 168
+    Width = 380
+    TabOrder = 2
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 20
+    Top = 264
+    Width = 202
+    Caption = 'Выберите категорию товара:'
+  end
+  object CBNote: TComboBox
+    Left = 16
+    Height = 28
+    Top = 296
+    Width = 272
+    ItemHeight = 20
+    ItemIndex = 0
+    Items.Strings = (
+      'пишущие принадлежности'
+      'принадлежности для черчения'
+      'принадлежности для рисования'
+      'мелкоофисное оборудование'
+      'школьные товары'
+      ''
+    )
+    TabOrder = 3
+    Text = 'пишущие принадлежности'
+  end
+  object bCancel: TBitBtn
+    Left = 216
+    Height = 38
+    Top = 344
+    Width = 160
+    Cancel = True
+    Caption = 'Не сохранять'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object bSave: TBitBtn
+    Left = 24
+    Height = 38
+    Top = 344
+    Width = 160
+    Caption = 'Сохранить товар'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 5
+  end
+  object eWarehouse: TCheckBox
+    Left = 112
+    Height = 24
+    Top = 216
+    Width = 121
+    Caption = 'есть на складе'
+    TabOrder = 6
+  end
+end
